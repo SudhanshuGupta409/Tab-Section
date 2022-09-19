@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f5abc9;
+    color: grey;
+}
+h3{
+    color: rgb(71, 70, 70);
+}
+
+img{
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+.sectionCenter{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 34px;
+    padding: 5rem 0;
+}
+.tabs{
+    background: #ffe5e2;
+    border-radius: 0.5rem;
+    grid-template-rows: auto 1fr;
+}
+.button{
+    padding: 1rem 0;
+    border: none;
+    font-size: 1rem;
+    background: #b6c9f0;
+    cursor: pointer;
+    transition: all .3s linear;
+    letter-spacing: .25rem;
+    transition: background-color 1s;
+}
+
+.btnContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button:nth-child(1){
+    border-top-left-radius: 0.5rem;
+}
+.button:nth-child(3){
+    border-top-right-radius: 0.5rem;
+}
+.button:hover:not(.live){
+    background: #e93b81;
+    color: white;
+}
+.tabsContent{
+    padding: 2rem 1.5rem;
+}
+
+@media (min-width:992px) {
+    .image{
+        margin-bottom: 0;
+    }
+    .sectionCenter{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.content{
+    display: none;
+}
+
+.content.live{
+    display: block;
+}
+
+.button.live{
+    background: #ffe5e2;
+}
